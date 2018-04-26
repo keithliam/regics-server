@@ -20,9 +20,8 @@
     "prettier": "1.7.4"
   },
   "scripts": {
-    "dev": "nuxt",
-    "start": "NODE_ENV=production node ./server.js",
-    "build": "next build",
+    "start": "backpack",
+    "build": "backpack build",
     "seed": "cat ./src/database/schema.sql | mysql -u root -p",
     "populate": "mysql -u root -p --silent < ./src/database/seed.sql",
     "precommit": "lint-staged",
