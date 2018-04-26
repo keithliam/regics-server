@@ -86,7 +86,7 @@ router.get('/api/session', (req, res) => {
     req.session.user['firstName'] = firstName[0];
   }
   console.log('Session: ');
-  consoel.log(req.session);
+  console.log(req.session);
   res.status(200).json({
     status: 200,
     message: 'Successfully fetched current session',
