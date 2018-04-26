@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
+    "backpack-core": "^0.7.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
@@ -14,14 +15,13 @@
     "mysql": "^2.15.0"
   },
   "devDependencies": {
-    "backpack-core": "^0.4.3",
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
     "prettier": "1.7.4"
   },
   "scripts": {
-    "start": "backpack",
-    "build": "backpack build",
+    "start": "babel-node",
+    "build": "babel-node build",
     "seed": "cat ./src/database/schema.sql | mysql -u root -p",
     "populate": "mysql -u root -p --silent < ./src/database/seed.sql",
     "precommit": "lint-staged",
