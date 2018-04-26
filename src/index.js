@@ -9,12 +9,7 @@ import router from './router';
 
 const app = express();
 const MySQLStore = store(session);
-const sessionStore = new MySQLStore({
-  host: 'us-cdbr-iron-east-05.cleardb.net',
-  user: 'b01344181d33d6',
-  password: 'fa6422f8',
-  db: 'heroku_123c7439e7f2cbd'
-});
+const sessionStore = new MySQLStore(db);
 const cors = require('cors');
 
 app.use(bodyParser.json());
