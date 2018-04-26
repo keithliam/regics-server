@@ -15,13 +15,14 @@
     "mysql": "^2.15.0"
   },
   "devDependencies": {
+    "backpack-core": "^0.4.3",
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
     "prettier": "1.7.4"
   },
   "scripts": {
-    "start": "babel-node",
-    "build": "babel-node build",
+    "start": "backpack",
+    "build": "backpack build",
     "seed": "cat ./src/database/schema.sql | mysql -u root -p",
     "populate": "mysql -u root -p --silent < ./src/database/seed.sql",
     "precommit": "lint-staged",
