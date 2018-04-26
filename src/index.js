@@ -17,6 +17,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(logger('dev'));
 app.use(cors());
 
+app.options('*', cors());
+
 app.use(
   session({
     key: 'regicssystem',
