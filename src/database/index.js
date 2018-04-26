@@ -21,6 +21,6 @@ db.connect(err => {
   }
 });
 
-db.query('USE regicsserver');
+db.query('USE heroku_123c7439e7f2cbd');
 
 export default db;
