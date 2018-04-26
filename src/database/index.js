@@ -1,10 +1,10 @@
 import mysql from 'mysql';
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'regicsserver',
-  password: 'regicsserver',
-  db: 'regicsserver'
+  host: 'us-cdbr-iron-east-05.cleardb.net',
+  user: 'b01344181d33d6',
+  password: 'fa6422f8',
+  db: 'heroku_123c7439e7f2cbd'
 });
 
 db.on('ready', () => console.log('Database is connected')).on('error', err => {
