@@ -9,7 +9,7 @@ import router from './router';
 
 const app = express();
 const MySQLStore = store(session);
-const sessionStore = new MySQLStore(db);
+const sessionStore = new MySQLStore({}, db);
 const cors = require('cors');
 
 app.use(bodyParser.json());
